@@ -14,7 +14,7 @@ import { SiBootstrap } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 
 export const greetings = {
-  name: "I'm  Faruk Taiwo",
+  // name: "I'm  Faruk Taiwo",
   title: "HI",
   description:
     "I am an experienced front-end developer with expertise in React, Tailwind, Node.js, JavaScript, HTML and CSS. I have implemented web applications for various industries, integrating APIs for complex data management. My experience also extends to developing interactive websites using modern technologies like React.js, Tailwind and Node.js.",
@@ -96,4 +96,27 @@ export const skills = [
     skillName: "MongoDB",
     fontAwesomeClassname: <SiMongodb />,
   },
+];
+
+export const Project = [
+  {
+    name: "halalMAtchmaking",
+    content: "lorem ipsum is thjdj hLUU BDHNS jddb ie  dwn,S",
+  },
+  {
+    name: "Binarfiy limited",
+    content: "lorem ipsum is thjdj hLUU BDHNS jddb ie  dwn,S",
+  },
+  {
+    name: "Hasuki Map",
+    content: "lorem ipsum is thjdj hLUU BDHNS jddb ie  dwn,S",
+  },
+  // {
+  //   name: "Hasuki Map",
+  //   content: "lorem ipsum is thjdj hLUU BDHNS jddb ie  dwn,S",
+  // },
+  // {
+  //   name: "Hasuki Map",
+  //   content: "lorem ipsum is thjdj hLUU BDHNS jddb ie  dwn,S",
+  // },
 ];

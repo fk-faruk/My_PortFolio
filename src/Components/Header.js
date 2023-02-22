@@ -1,17 +1,19 @@
 import React from "react";
 import { useState } from "react";
+// import Skill from "./Skill";
 
 const Headin = () => {
   const openHeader = () => {
     document.querySelector("#navbar-sticky").classList.toggle("hidden");
   };
+  const faruk = "<Faruk />";
   return (
-    <nav class="bg-white px-2 sm:px-4 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+    <nav class="bg-white fixed px-2 sm:px-4 dark:bg-gray-900 w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
       <div class="container flex flex-wrap justify-between items-center mx-auto">
         <a href="https://flowbite.com/" class="flex items-center">
           {/* <img src="" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" /> */}
           <span class="font self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-            Fk
+            {faruk}
           </span>
         </a>
         <div class="flex md:order-2">
@@ -56,23 +58,23 @@ const Headin = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#skill"
                 class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
-                About
+                Skills
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="#project"
                 class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
-                Services
+                Projects
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="#contact"
                 class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Contact

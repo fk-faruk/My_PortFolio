@@ -7,22 +7,22 @@ import { FaNodeJs } from "react-icons/fa";
 
 const Skill = () => {
   return (
-    <>
+    <div className=" mt-14" id="skill">
       <div className=" my-4 md:pl-32 ">
         <div className="">
-          <p className="text-4xl font">Skills</p>
+          <p className="text-3xl font">Skills</p>
         </div>
         <div
-          className="grid grid-cols-5 mt-14
+          className="grid grid-cols-5 mt-4
         "
         >
           {skills.map((skill) => {
             return (
               <div>
-                <div className="" style={{ fontSize: "10vh" }}>
+                <div className="" style={{ fontSize: "6vh" }}>
                   {skill.fontAwesomeClassname}
                 </div>
-                <p className="text-2xl font">{skill.skillName}</p>
+                <p className="text-xl font">{skill.skillName}</p>
 
                 {/* <SingleSkill /> */}
               </div>
@@ -30,7 +30,7 @@ const Skill = () => {
           })}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
