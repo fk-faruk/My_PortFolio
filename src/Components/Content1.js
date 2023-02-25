@@ -9,8 +9,8 @@ import Icons from "./Icons";
 const Content1 = () => {
   return (
     <>
-      <div className=" grid grid-cols-2 mt-10 background">
-        <div className="md:mx-36  pt-28">
+      <div className=" grid md:grid-cols-2 md:mt-10 background grid-cols-1 ">
+        <div className="md:mx-36  md:pt-28 mx-8 pt-14">
           <div className=" flex flex-row gap-1">
             <h4 className="text-3xl mt-2">{greetings.title}</h4>
             <Hi />

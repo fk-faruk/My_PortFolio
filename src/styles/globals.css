@@ -120,5 +120,5 @@ a {
 
 .background {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url("../../public/Images/cubes.png");
+    url("../../public/cubes.png");
 }

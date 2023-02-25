@@ -11,6 +11,10 @@ import Contact from "@/Components/Contact";
 import { Project } from "Portfolio";
 import { Card } from "flowbite-react";
 import Footer from "@/Components/Footer";
+import { BsBoxArrowInRight } from "react-icons/bs";
+import { CardBody, CardFooter } from "reactstrap";
+// import Mage from "../../public/vercel.svg";
+// import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,18 +26,39 @@ export default function Home() {
       <Skill />
 
       <div className="">
-        <p className="mt-20 text-4xl font pl-32">Projects </p>
-        <div className="flex flex-row gap-8 md:mx-32">
+        <p className="mt-20 text-4xl font md:pl-32 pl-8">Projects </p>
+        {/* <img src={Mage} alt=" " style={{ width: "20vh" }} /> */}
+        {/* <Image src={Mage} alt="great resources" /> */}
+        <div className="flex md:flex-row flex-col mx-8 gap-8 md:mx-32">
           {Project.map((single) => {
             return (
-              <Card imgSrc="https://flowbite.com/docs/images/blog/image-1.jpg">
-                <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  {single.name}
-                </h5>
+              // <div className="">
+              <Card style={{ width: "100vh" }}>
+                <Image
+                  src={single.Image}
+                  alt=""
+                  className="w-full object-fill m-0"
+                />
+                <CardBody>
+                  <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    {single.name}
+                  </h5>
 
-                <p className="font-normal text-gray-700 dark:text-gray-400">
-                  {single.content}
-                </p>
+                  <p className="font-normal text-gray-700 dark:text-gray-400">
+                    {single.content}
+                  </p>
+                </CardBody>
+
+                <CardFooter>
+                  <button className="w-20 ">
+                    <div className=" flex flex-row ">
+                      <BsBoxArrowInRight
+                        style={{ fontSize: "5vh" }}
+                        className="hover:text-green-600"
+                      />
+                    </div>
+                  </button>
+                </CardFooter>
               </Card>
             );
           })}

@@ -23,7 +23,7 @@ import {
 
 const Contact = () => {
   return (
-    <div className="md:px-32 md:my-10">
+    <div className="md:px-32 md:my-10 mx-8 my-10">
       <p className="text-3xl font ">Contact</p>
       <div className="max-w-xl mt-2 flex " id="contact">
         <Card className="bg-gradient-secondary shadow">
@@ -65,15 +65,9 @@ const Contact = () => {
               />
             </FormGroup>
             <div>
-              <Button
-                block
-                className="btn-round"
-                color="default"
-                size="lg"
-                type="submit"
-              >
-                Send Message
-              </Button>
+              <button className="text-white bg-green-600 p-2 rounded-md  hover:bg-green-800 ">
+                Send a message
+              </button>
             </div>
           </CardBody>
         </Card>
