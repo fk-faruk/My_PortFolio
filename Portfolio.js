@@ -14,7 +14,7 @@ import { SiBootstrap } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import Binarify from "./public/Binarify.png";
 import Halal from "./public/Halal.png";
-import hasukiMap from "./public/HasukiMap.png";
+import hasukiMap from "./public/hasukiMap.png";
 // console.log(Image);
 
 export const greetings = {
