@@ -17,6 +17,9 @@ import Halal from "./public/Halal.png";
 import hasukiMap from "./public/hasukiMap.png";
 // console.log(Image);
 
+
+
+
 export const greetings = {
   // name: "I'm  Faruk Taiwo",
   title: "HI",
@@ -26,6 +29,9 @@ export const greetings = {
   // "I am Student / Software Developer, learning Full Stack Web Development and Cyber Security. I have experience building Applications with Vanilla JavaScript, React,  Vue,  Node,  Java,  Spring Boot, Python,  Django and some other cool libraries and frameworks.",
   resumeLink: "https://resume.io/r/4U4h0batR",
 };
+
+
+
 
 export const openSource = {
   githubUserName: "brendanglancy",
@@ -133,3 +139,7 @@ export const Project = [
   //   content: "lorem ipsum is thjdj hLUU BDHNS jddb ie  dwn,S",
   // },
 ];
+
+
+
+

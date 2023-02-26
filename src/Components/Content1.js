@@ -15,10 +15,10 @@ const Content1 = () => {
             <h4 className="text-3xl mt-2">{greetings.title}</h4>
             <Hi />
           </div>
-          <p className="text-4xl">
+          <p className="md:text-5xl">
             I'm <span className="text-[#2978b5]">Faruk Taiwo</span>
           </p>
-          <p className="text-xl font">{greetings.description}</p>
+          <p className="text-2xl font">{greetings.description}</p>
           <Icons />
           {/* <button className=""><a></a>See ny resume</button> */}
           <Link href={greetings.resumeLink}>

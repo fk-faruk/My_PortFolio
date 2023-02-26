@@ -33,7 +33,7 @@ export default function Home() {
           {Project.map((single) => {
             return (
               // <div className="">
-              <Card style={{ width: "100vh" }}>
+              <Card className="md:w-100">
                 <Image
                   src={single.Image}
                   alt=""

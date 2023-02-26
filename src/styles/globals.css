@@ -2,13 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Parisienne&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Montserrat&family=Parisienne&display=swap");
 
 .font {
   font-family: "Cinzel", serif;
   font-family: "Parisienne", cursive;
+}
+
+.font1 {
+  /* font-family: 'Cinzel', serif; */
+  font-family: "Montserrat", sans-serif;
+  /* font-family: 'Parisienne', cursive; */
 }
 :root {
   --max-width: 1100px;

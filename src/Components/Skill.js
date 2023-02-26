@@ -22,7 +22,7 @@ const Skill = () => {
                 <div className="" style={{ fontSize: "6vh" }}>
                   {skill.fontAwesomeClassname}
                 </div>
-                <p className="md:text-xl  text-lg font">{skill.skillName}</p>
+                <p className="md:text-xl  text-lg font1">{skill.skillName}</p>
 
                 {/* <SingleSkill /> */}
               </div>
