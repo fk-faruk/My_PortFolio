@@ -12,13 +12,17 @@ const Content1 = () => {
       <div className=" grid md:grid-cols-2 md:mt-10 background grid-cols-1 ">
         <div className="md:mx-36  md:pt-28 mx-8 pt-14">
           <div className=" flex flex-row gap-1">
-            <h4 className="text-3xl mt-2">{greetings.title}</h4>
+            <h4 className=" text-2xl md:text-4xl mt-2 font">
+              {greetings.title}
+            </h4>
             <Hi />
           </div>
-          <p className="md:text-5xl">
-            I'm <span className="text-[#2978b5]">Faruk Taiwo</span>
+          <p className="text-2xl md:text-4xl">
+            I'm <span className="text-[#2978b5] font">Faruk Taiwo</span>
           </p>
-          <p className="text-2xl font">{greetings.description}</p>
+          <p className="text-xl md:text-2xl font md:font1">
+            {greetings.description}
+          </p>
           <Icons />
           {/* <button className=""><a></a>See ny resume</button> */}
           <Link href={greetings.resumeLink}>

@@ -9,8 +9,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Montserrat&family=Parisienne&display=swap");
 
 .font {
-  font-family: "Cinzel", serif;
+  /* font-family: "Cinzel", serif; */
   font-family: "Parisienne", cursive;
+  /* font-family: "Montserrat", sans-serif; */
+}
+
+@media screen {
 }
 
 .font1 {

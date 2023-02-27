@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useRef } from "react";
 // import {
 //   Card,
 //   Label,
@@ -6,7 +7,10 @@ import React from "react";
 //   Button,
 //   InputGroupAddon,
 // } from "flowbite-react";
+// import { EmailJSResponseStatus } from "@emailjs/browser";
 
+// console.log(EmailJSResponseStatus);
+import emailjs from "@emailjs/browser";
 import {
   Button,
   Card,
@@ -20,55 +24,121 @@ import {
   //   Row,
   //   Col,
 } from "reactstrap";
+import { result } from "lodash";
 
 const Contact = () => {
+  // Using Emailjs to send Form Data
+  const form = useRef();
+
+  const [Form, setForm] = useState({
+    from_name: "",
+    from_email: "",
+    message: "",
+  });
+  const [FormData, SetFormData] = useState();
+  const HandleChange = (e) => {
+    const { name, value } = e.target;
+    // console.log(name, value);
+
+    setForm((prev) => {
+      return { ...prev, [name]: value };
+    });
+
+    // console.log(Form);
+  };
+
+  const HandleSubmit = (e) => {
+    e.preventDefault();
+    SetFormData(Form);
+
+    // const PushData = FormData;
+
+    console.log(process.env.API_KEY);
+
+    // console.log(FormData);
+
+    // emailjs
+    //   .sendForm(
+    //     "service_5zqgb8o",
+    //     "template_q5sy9hn",
+
+    //     form.current,
+    //     // "3zENa5Wu3rI6e5PT7"
+    //     process.env.REACT_APP_PJ_TOKEN
+    //   )
+    //   .then((result) => {
+    //     console.log(result.text);
+    //   })
+    //   .catch((error) => {
+    //     console.log(error.text);
+    //   });
+    // // console.log(FormData);
+    // setForm("");
+  };
+
   return (
-    <div className="md:px-32 md:my-10 mx-8 my-10">
+    <div className="md:px-[12vh] md:my-10 mx-8 my-10">
       <p className="text-3xl font ">Contact</p>
       <div className="max-w-xl mt-2 flex " id="contact">
         <Card className="bg-gradient-secondary shadow">
           <CardBody className="p-lg-5">
             <h4 className="mb-1">Want to work with me?</h4>
             <p className="mt-0">Your project is very important to me.</p>
-            <FormGroup>
-              <InputGroup className="input-group-alternative">
-                {/* <InputGroupAddon addonType="prepend"> */}
-                <InputGroupText>
-                  <i className="ni ni-user-run" />
-                </InputGroupText>
-                {/* </InputGroupAddon> */}
-                <Input placeholder="Your name" type="text" name="user_name" />
-              </InputGroup>
-            </FormGroup>
-            <FormGroup>
-              <InputGroup className="input-group-alternative">
-                {/* <InputGroupAddon addonType="prepend"> */}
-                <InputGroupText>
-                  <i className="ni ni-email-83" />
-                </InputGroupText>
-                {/* </InputGroupAddon> */}
+            <form ref={form}>
+              <FormGroup>
+                <InputGroup className="input-group-alternative">
+                  {/* <InputGroupAddon addonType="prepend"> */}
+                  <InputGroupText>
+                    <i className="ni ni-user-run" />
+                  </InputGroupText>
+                  {/* </InputGroupAddon> */}
+                  <Input
+                    placeholder="Your name"
+                    type="text"
+                    name="from_name"
+                    value={Form.from_name}
+                    onChange={HandleChange}
+                  />
+                </InputGroup>
+              </FormGroup>
+              <FormGroup>
+                <InputGroup className="input-group-alternative">
+                  {/* <InputGroupAddon addonType="prepend"> */}
+                  <InputGroupText>
+                    <i className="ni ni-email-83" />
+                  </InputGroupText>
+                  {/* </InputGroupAddon> */}
+                  <Input
+                    placeholder="Email address"
+                    name="from_email"
+                    type="email"
+                    onChange={HandleChange}
+                    value={Form.from_email}
+                  />
+                </InputGroup>
+              </FormGroup>
+              <FormGroup className="mb-4">
                 <Input
-                  placeholder="Email address"
-                  name="user_email"
-                  type="email"
+                  className="form-control-alternative"
+                  cols="80"
+                  name="message"
+                  placeholder="Type a message..."
+                  rows="4"
+                  type="textarea"
+                  onChange={HandleChange}
+                  value={Form.message}
                 />
-              </InputGroup>
-            </FormGroup>
-            <FormGroup className="mb-4">
-              <Input
-                className="form-control-alternative"
-                cols="80"
-                name="user_message"
-                placeholder="Type a message..."
-                rows="4"
-                type="textarea"
-              />
-            </FormGroup>
-            <div>
-              <button className="text-white bg-green-600 p-2 rounded-md  hover:bg-green-800 ">
-                Send a message
-              </button>
-            </div>
+              </FormGroup>
+
+              <div>
+                <button
+                  className="text-white bg-green-600 p-2 rounded-md  hover:bg-green-800 "
+                  onClick={HandleSubmit}
+                >
+                  Send a message
+                </button>
+              </div>
+            </form>
           </CardBody>
         </Card>
       </div>

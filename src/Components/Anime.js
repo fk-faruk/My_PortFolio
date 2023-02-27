@@ -9,7 +9,7 @@ const Anime = () => {
         autoplay
         loop
         src={Animation}
-        style={{ height: "500px", width: "400px" }}
+        style={{ height: "600px", width: "500px" }}
       >
         <Controls
           visible={false}
@@ -29,7 +29,7 @@ export const Hi = () => {
         autoplay
         loop
         src="https://assets9.lottiefiles.com/packages/lf20_vWhFpWi9X5.json"
-        style={{ height: "40px", width: "40px" }}
+        style={{ height: "50px", width: "50px" }}
       >
         <Controls
           visible={false}
