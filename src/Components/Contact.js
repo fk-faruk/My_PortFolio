@@ -10,7 +10,7 @@ import { useState, useRef } from "react";
 // import { EmailJSResponseStatus } from "@emailjs/browser";
 
 // console.log(EmailJSResponseStatus);
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 import {
   Button,
   Card,
@@ -24,7 +24,7 @@ import {
   //   Row,
   //   Col,
 } from "reactstrap";
-import { result } from "lodash";
+// import { result } from "lodash";
 
 const Contact = () => {
   // Using Emailjs to send Form Data
