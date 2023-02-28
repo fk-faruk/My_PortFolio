@@ -82,8 +82,8 @@ const Contact = () => {
       <div className="max-w-xl mt-2 flex " id="contact">
         <Card className="bg-gradient-secondary shadow">
           <CardBody className="p-lg-5">
-            <h4 className="mb-1">Want to work with me?</h4>
-            <p className="mt-0">Your project is very important to me.</p>
+            <h4 className="mb-1">Want to work with me? or</h4>
+            <p className="mt-0 font text-lg">Better still Say HI</p>
             <form ref={form}>
               <FormGroup>
                 <InputGroup className="input-group-alternative">
