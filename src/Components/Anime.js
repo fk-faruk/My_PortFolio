@@ -9,7 +9,7 @@ const Anime = () => {
         autoplay
         loop
         src={Animation}
-        style={{ height: "600px", width: "500px" }}
+        style={{ height: "550px", width: "400px" }}
       >
         <Controls
           visible={false}

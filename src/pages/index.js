@@ -13,6 +13,7 @@ import { Card } from "flowbite-react";
 import Footer from "@/Components/Footer";
 import { BsBoxArrowInRight } from "react-icons/bs";
 import { CardBody, CardFooter } from "reactstrap";
+import { Def, Nee } from "@/Components/Header";
 // import Mage from "../../public/vercel.svg";
 // import Image from "next/image";
 
@@ -21,7 +22,8 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-      <Headin />
+      {/* <Headin /> */}
+      <Nee />
       <Content1 />
       <Skill />
 
@@ -66,6 +68,8 @@ export default function Home() {
       </div>
       <Contact />
       <Footer />
+
+      {/* <Def /> */}
     </>
   );
 }

@@ -17,9 +17,6 @@ import Halal from "./public/Halal.png";
 import hasukiMap from "./public/hasukiMap.png";
 // console.log(Image);
 
-
-
-
 export const greetings = {
   // name: "I'm  Faruk Taiwo",
   title: "HI",
@@ -29,9 +26,6 @@ export const greetings = {
   // "I am Student / Software Developer, learning Full Stack Web Development and Cyber Security. I have experience building Applications with Vanilla JavaScript, React,  Vue,  Node,  Java,  Spring Boot, Python,  Django and some other cool libraries and frameworks.",
   resumeLink: "https://resume.io/r/4U4h0batR",
 };
-
-
-
 
 export const openSource = {
   githubUserName: "brendanglancy",
@@ -113,14 +107,14 @@ export const Project = [
     Image: Halal,
     name: "Halal-MatchMaking",
     content:
-      "lorem ipsum is thjdj hLUU BDHNS jddb ie  dwn,Slorem ipsum is thjdj hLUU BDHNS jddb ie  dwn,Slorem ipsum is thjdj hLUU BDHNS jddb ie  dwn,S",
+      "Halal-matchmaking is mobile and web application that aid Single muslim find their perfect partner in a seamless way, while respecting their beliefs",
     Links: "",
   },
   {
     Image: Binarify,
-    name: "Binarfiy limited",
+    name: "Binarify limited",
     content:
-      "lorem ipsum is thjdj hLUU BDHNS jddb ie  dwn,S lorem ipsum is thjdj hLUU BDHNS jddb ie  dwn,S lorem ipsum is thjdj hLUU BDHNS jddb ie  dwn,S",
+      "Binarify limited is a leading software development company that specializes in providing cutting-edge software solutions to businesses and organizations of all sizes. ",
     Links: "",
   },
   {
@@ -139,7 +133,3 @@ export const Project = [
   //   content: "lorem ipsum is thjdj hLUU BDHNS jddb ie  dwn,S",
   // },
 ];
-
-
-
-

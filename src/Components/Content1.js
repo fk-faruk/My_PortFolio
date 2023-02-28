@@ -9,10 +9,10 @@ import Icons from "./Icons";
 const Content1 = () => {
   return (
     <>
-      <div className=" grid md:grid-cols-2 md:mt-10 background grid-cols-1 ">
-        <div className="md:mx-36  md:pt-28 mx-8 pt-14">
+      <div className=" grid sm:grid-cols-5  md:mt-10 background grid-cols-1 px-9 md:px-28 ">
+        <div className=" col-span-3  md:pt-28 mx-8 pt-20">
           <div className=" flex flex-row gap-1">
-            <h4 className=" text-2xl md:text-4xl mt-2 font">
+            <h4 className=" text-3xl md:text-4xl mt-2 font">
               {greetings.title}
             </h4>
             <Hi />
@@ -30,7 +30,7 @@ const Content1 = () => {
           </Link>
         </div>
 
-        <div className="">
+        <div className="col-span-2 w-auto">
           <Anime />
           {/* <img src={coding} alt="sss" /> */}
         </div>
