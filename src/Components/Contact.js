@@ -10,7 +10,7 @@ import { useState, useRef } from "react";
 // import { EmailJSResponseStatus } from "@emailjs/browser";
 
 // console.log(EmailJSResponseStatus);
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 import {
   Button,
   Card,
@@ -24,10 +24,13 @@ import {
   //   Row,
   //   Col,
 } from "reactstrap";
+import { useSelector, useDispatch } from "react-redux";
 // import { result } from "lodash";
 
 const Contact = () => {
   // Using Emailjs to send Form Data
+
+  const bgTheme = useSelector((state) => state.theme.value);
   const form = useRef();
 
   const [Form, setForm] = useState({
@@ -53,33 +56,40 @@ const Contact = () => {
 
     // const PushData = FormData;
 
-    console.log(process.env.API_KEY);
+    // console.log(process.env.NEXT_PUBLIC_API_KEY);
 
     // console.log(FormData);
 
-    // emailjs
-    //   .sendForm(
-    //     "service_5zqgb8o",
-    //     "template_q5sy9hn",
+    emailjs
+      .sendForm(
+        "service_5zqgb8o",
+        "template_q5sy9hn",
 
-    //     form.current,
-    //     // "3zENa5Wu3rI6e5PT7"
-    //     process.env.REACT_APP_PJ_TOKEN
-    //   )
-    //   .then((result) => {
-    //     console.log(result.text);
-    //   })
-    //   .catch((error) => {
-    //     console.log(error.text);
-    //   });
-    // // console.log(FormData);
+        form.current,
+        // "3zENa5Wu3rI6e5PT7"
+        process.env.NEXT_PUBLIC_API_KEY
+      )
+      .then((result) => {
+        console.log(result.text);
+      })
+      .catch((error) => {
+        console.log(error.text);
+      });
+    // console.log(FormData);
     // setForm("");
   };
 
   return (
-    <div className="md:px-[12vh] md:my-10 mx-8 my-10">
+    <div
+      className="md:px-[12vh] md:my-10 mx-8 my-10"
+      id="Contact"
+      style={{
+        color: bgTheme.text,
+        backgroundColor: bgTheme.color,
+      }}
+    >
       <p className="text-3xl font ">Contact</p>
-      <div className="max-w-xl mt-2 flex " id="contact">
+      <div className="max-w-xl mt-2 flex ">
         <Card className="bg-gradient-secondary shadow">
           <CardBody className="p-lg-5">
             <h4 className="mb-1">Want to work with me? or</h4>

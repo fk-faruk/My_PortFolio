@@ -4,11 +4,25 @@ import { Row, col } from "reactstrap";
 // import Icon from "react-icons/all";
 import { RxVercelLogo } from "react-icons/rx";
 import { FaNodeJs } from "react-icons/fa";
-
+import { useSelector, useDispatch } from "react-redux";
+import { Theme } from "@/Store/Index";
 const Skill = () => {
+  const bgtheme = useSelector((state) => state.theme.value);
+
+  // const dispatch = useDispatch();
+
+  // dispatch(Theme({}));
+
   return (
-    <div className=" mt-14 mx-8" id="skill">
-      <div className=" my-4 md:pl-32 ">
+    <div
+      className=" pt-14 px-8"
+      id="Skills"
+      style={{
+        backgroundColor: bgtheme.color,
+        color: bgtheme.text,
+      }}
+    >
+      <div className=" py-4 md:pl-32 ">
         <div className="">
           <p className="text-3xl font">Skills</p>
         </div>

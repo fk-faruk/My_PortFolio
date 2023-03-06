@@ -12,7 +12,7 @@ const Icons = () => {
   return (
     <>
       <div className="flex flex-row gap-3">
-        <Link href="https://github.com/fk-faruk">
+        <Link href="https://github.com/fk-faruk" target={"_blank"}>
           <div
             className="my-4 rounded-full bg-gray-900 hover:bg-gray-500"
             style={{ fontSize: "5vh" }}
@@ -27,7 +27,10 @@ const Icons = () => {
           <BsLinkedin />
         </div> */}
 
-        <Link href="https://www.linkedin.com/in/faruk-taiwo-6790141a2/">
+        <Link
+          href="https://www.linkedin.com/in/faruk-taiwo-6790141a2/"
+          target={"_blank"}
+        >
           <div
             className="my-4 rounded-full bg-blue-600 hover:bg-blue-400"
             style={{ fontSize: "5vh" }}
@@ -37,7 +40,7 @@ const Icons = () => {
             </span>
           </div>
         </Link>
-        <Link href="https://www.twitter.com/farukblue5">
+        <Link href="https://www.twitter.com/farukblue5" target={"_blank"}>
           <div
             className="my-4 rounded-full bg-blue-600 hover:bg-blue-400"
             style={{ fontSize: "5vh" }}
