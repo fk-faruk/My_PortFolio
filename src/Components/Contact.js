@@ -81,7 +81,7 @@ const Contact = () => {
 
   return (
     <div
-      className="md:px-[12vh] md:my-10 mx-8 my-10"
+      className="md:px-[17vh] md:my-0 mx-8 md:mx-0 md:pb-10 my-10"
       id="Contact"
       style={{
         color: bgTheme.text,

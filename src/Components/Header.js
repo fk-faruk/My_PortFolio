@@ -47,8 +47,20 @@ export const Nee = () => {
           {faruk}
         </span>
       </Navbar.Brand>
+      <div className="md:ml-[100vh] ml-40">
+        {Changetheme.dark ? (
+          <button onClick={HandleChangeTheme} className="text-xl text-black">
+            <MdDarkMode />
+          </button>
+        ) : (
+          <button onClick={DefaultTheme} className="text-xl text-black">
+            <MdDarkMode />
+          </button>
+        )}
+      </div>
       <Navbar.Toggle />
       <Navbar.Collapse>
+        {/* <div className=""> */}
         <Navbar.Link
           href="#Home"
           // active={true}
@@ -80,16 +92,7 @@ export const Nee = () => {
         <Navbar.Link href="#Contact" className="text-[#2978b5] md:text-md">
           Contact
         </Navbar.Link>
-
-        {Changetheme.dark ? (
-          <button onClick={HandleChangeTheme} className="text-xl text-black">
-            <MdDarkMode />
-          </button>
-        ) : (
-          <button onClick={DefaultTheme} className="text-xl text-black">
-            <MdDarkMode />
-          </button>
-        )}
+        {/* </div> */}
       </Navbar.Collapse>
     </Navbar>
   );

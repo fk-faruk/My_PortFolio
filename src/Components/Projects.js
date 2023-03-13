@@ -13,14 +13,14 @@ const Projects = () => {
   return (
     <>
       <div
-        className=""
+        className="pb-20 pt-20 "
         id="Projects"
         style={{
           color: bgTheme.text,
           backgroundColor: bgTheme.color,
         }}
       >
-        <p className="pt-20 text-4xl font md:pl-32 pl-8">Projects </p>
+        <p className=" text-4xl font md:pl-32 pl-8">Projects </p>
         {/* <img src={Mage} alt=" " style={{ width: "20vh" }} /> */}
         {/* <Image src={Mage} alt="great resources" /> */}
         <div className="flex md:flex-row flex-col mx-8 gap-8 md:mx-32">
