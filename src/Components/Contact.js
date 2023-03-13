@@ -1,15 +1,6 @@
 import React from "react";
 import { useState, useRef } from "react";
-// import {
-//   Card,
-//   Label,
-//   TextInput,
-//   Button,
-//   InputGroupAddon,
-// } from "flowbite-react";
-// import { EmailJSResponseStatus } from "@emailjs/browser";
-
-// console.log(EmailJSResponseStatus);
+import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
 import {
   Button,
@@ -20,12 +11,9 @@ import {
   InputGroupAddon,
   InputGroupText,
   InputGroup,
-  //   Container,
-  //   Row,
-  //   Col,
 } from "reactstrap";
 import { useSelector, useDispatch } from "react-redux";
-// import { result } from "lodash";
+import { ToastContainer, toast } from "react-toastify";
 
 const Contact = () => {
   // Using Emailjs to send Form Data
@@ -52,13 +40,7 @@ const Contact = () => {
 
   const HandleSubmit = (e) => {
     e.preventDefault();
-    SetFormData(Form);
-
-    // const PushData = FormData;
-
-    // console.log(process.env.NEXT_PUBLIC_API_KEY);
-
-    // console.log(FormData);
+    // SetFormData(Form);
 
     emailjs
       .sendForm(
@@ -66,7 +48,6 @@ const Contact = () => {
         "template_q5sy9hn",
 
         form.current,
-        // "3zENa5Wu3rI6e5PT7"
         process.env.NEXT_PUBLIC_API_KEY
       )
       .then((result) => {
@@ -75,13 +56,21 @@ const Contact = () => {
       .catch((error) => {
         console.log(error.text);
       });
+
+    toast("Message Sent Successfully");
+
+    setForm({
+      from_name: "",
+      from_email: "",
+      message: "",
+    });
     // console.log(FormData);
     // setForm("");
   };
 
   return (
     <div
-      className="md:px-[17vh] md:my-0 mx-8 md:mx-0 md:pb-10 my-10"
+      className="md:px-[17vh] md:my-0 px-8 md:mx-0 md:pb-10 py-10"
       id="Contact"
       style={{
         color: bgTheme.text,
@@ -147,6 +136,7 @@ const Contact = () => {
                 >
                   Send a message
                 </button>
+                <ToastContainer position="top-center" theme="dark" />
               </div>
             </form>
           </CardBody>
