@@ -42,12 +42,14 @@ export const Nee = () => {
       // rounded={true}
       className="fixed px-2 sm:px-10 md:border-b-2 border-b-[0.4vh]  md:px-28 dark:bg-gray-900 w-full z-20 top-0 left-0  border-gray-200 dark:border-gray-600"
     >
+      {/* <div className="flex"> */}
       <Navbar.Brand className="no-underline">
         <span className="self-center whitespace-nowrap text-2xl text-[#2978b5] font font-semibold dark:text-white ">
           {faruk}
         </span>
       </Navbar.Brand>
-      <div className="md:ml-[100vh] md:mt-3 mt-2 ml-[40vh]">
+
+      <div className="md:ml-[100vh] md:mt-3 mt-2 ml-[20vh]">
         {Changetheme.dark ? (
           <button onClick={HandleChangeTheme} className="text-xl text-black">
             <MdDarkMode />
@@ -59,6 +61,7 @@ export const Nee = () => {
         )}
       </div>
       <Navbar.Toggle />
+      {/* </div> */}
       <Navbar.Collapse>
         {/* <div className=""> */}
         <Navbar.Link
