@@ -49,7 +49,7 @@ export const Nee = () => {
         </span>
       </Navbar.Brand>
 
-      <div className="md:ml-[100vh] md:mt-3 mt-2 ml-[20vh]">
+      <div className="md:ml-[50vh] md:mt-3 mt-2 ml-[20vh]">
         {Changetheme.dark ? (
           <button onClick={HandleChangeTheme} className="text-xl text-black">
             <MdDarkMode />
