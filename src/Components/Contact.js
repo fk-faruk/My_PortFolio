@@ -39,7 +39,7 @@ const Contact = () => {
   };
 
   const HandleSubmit = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     // SetFormData(Form);
 
     emailjs
