@@ -46,10 +46,12 @@ const Projects = () => {
                 <CardFooter>
                   <button className="w-20 ">
                     <div className=" flex flex-row ">
-                      <BsBoxArrowInRight
-                        style={{ fontSize: "5vh" }}
-                        className="hover:text-green-600"
-                      />
+                      <a href={single.Links} target="_blank">
+                        <BsBoxArrowInRight
+                          style={{ fontSize: "5vh" }}
+                          className="hover:text-green-600"
+                        />
+                      </a>
                     </div>
                   </button>
                 </CardFooter>

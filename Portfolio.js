@@ -115,14 +115,14 @@ export const Project = [
     name: "Binarify limited",
     content:
       "Binarify limited is a leading software development company that specializes in providing cutting-edge software solutions to businesses and organizations of all sizes. ",
-    Links: "",
+    Links: "https://binarifylimited.com/",
   },
   {
     Image: hasukiMap,
     name: "Hasuki Map",
     content:
       "HasukiMap is a Blockchain NFT project that displays all of the Hasuki NFT holders on a map along with how many NFT each holder currently has.",
-    Links: "",
+    Links: "https://hunt.hasukimap.com/",
   },
   // {
   //   name: "Hasuki Map",
