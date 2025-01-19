@@ -1,0 +1,8 @@
+
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Make all cards stretch to the same height */
+  }

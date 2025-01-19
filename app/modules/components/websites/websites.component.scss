@@ -1,0 +1,12 @@
+// .card-container {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(300px, 2fr)); /* Adjust column sizes */
+//     gap: 1.5rem; /* Space between cards */
+//   }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Make all cards stretch to the same height */
+  }

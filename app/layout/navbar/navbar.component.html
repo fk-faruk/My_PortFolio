@@ -1,0 +1,59 @@
+<div class="" [ngClass]="getBodyClass()">
+    <nav
+  id="sticky-banner"
+  class="fixed top-0 left-0 z-50 w-full bg-black p-4 flex justify-between items-center  md:px-10"
+>
+  <!-- Logo -->
+  <div class="inline-flex text-white text-2xl ml-4">
+    <span class="">IT</span>
+    <span class="ml-1">Business</span>
+    <span class="ml-1">Consultant</span>
+  </div>
+
+  <!-- Hamburger Menu for Mobile -->
+  <button
+  type="button"
+    class="block sm:hidden text-white focus:outline-none"
+    [ngClass]="menu"
+    (click)="toggleMenu()"
+  >
+    <svg
+      class="w-6 h-6"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 6h16M4 12h16m-7 6h7"
+      ></path>
+    </svg>
+  </button>
+
+  <!-- Nav Links -->
+  <div
+    id="menu"
+    class="hidden gap-7 sm:flex-row flex-col absolute sm:static bg-black sm:bg-transparent top-full left-0 w-full sm:w-auto sm:flex items-center"
+  >
+    <div class="flex flex-col sm:flex-row text-center sm:text-left gap-4 sm:gap-7 text-white text-sm sm:text-base my-2 sm:my-0 ml-4 sm:ml-0">
+      <a (click)="routeTo('homepage')" class="cursor-pointer" >Homepage</a>
+      <a (click)="routeTo('about-us')" class="cursor-pointer">About Us</a>
+      <a (click)="routeTo('services')" class="cursor-pointer">Services</a>
+      <a (click)="routeTo('client_project_page')" class="cursor-pointer">Client Project Scope</a>
+    </div>
+
+    <div class="my-2 sm:my-0">
+      <a
+        class="inline-block cursor-pointer py-2 px-4 bg-gray-200 text-black rounded-full hover:bg-gray-300 transition"
+        (click)="routeTo('contacts')"
+      >
+        Contact Us
+      </a>
+    </div>
+  </div>
+</nav>
+
+  </div>
